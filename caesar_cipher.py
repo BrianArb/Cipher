@@ -14,7 +14,7 @@ private correspondence.
 
 class CaesarCipher(object):
   """Caesar cipher, is one of the simplest encryption techniques."""
-  key = 'XYZABCDEFGHIJKLMNOPQRSTUVW'
+  
   cipher = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
   def __init__(self, message, shift_by=3):
@@ -37,7 +37,7 @@ class CaesarCipher(object):
     En(X) = (x + n) mod 26
 
     Returns:
-      string: The encrypted_string.
+      string: The encrypted string.
     """
     encrypted_string = ''
     for character in self.message:
@@ -55,10 +55,10 @@ class CaesarCipher(object):
     Decryption is performed similarly to the encryption scheme.
     Decryption of a letter by a shift n can be described mathematically as...
 
-    En(X) = (x - n) mod 26
+    Dn(X) = (x - n) mod 26
 
     Returns:
-      string: The decrypted_string.
+      string: The decrypted string.
     """
     decrypted_string = ''
     for character in self.message:
